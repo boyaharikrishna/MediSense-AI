@@ -1,0 +1,2995 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f7ff;
+  color: #1e293b;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* ============================= */
+/* MAIN PAGE */
+/* ============================= */
+
+.page-container {
+  min-height: 100vh;
+  padding: 35px;
+  background:
+    linear-gradient(
+      135deg,
+      #eef2ff 0%,
+      #f8faff 45%,
+      #eefcff 100%
+    );
+}
+
+
+/* ============================= */
+/* PAGE HEADER */
+/* ============================= */
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #172554;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+
+/* ============================= */
+/* FORM CARD */
+/* ============================= */
+
+.form-card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 35px rgba(30, 41, 59, 0.08);
+
+  margin-bottom: 35px;
+  border: 1px solid #e2e8f0;
+}
+
+.form-card h2 {
+  margin-bottom: 25px;
+  color: #312e81;
+}
+
+
+/* ============================= */
+/* FORM GRID */
+/* ============================= */
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(230px, 1fr));
+
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+
+/* ============================= */
+/* INPUTS */
+/* ============================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+  padding: 13px 15px;
+
+  border-radius: 12px;
+
+  border: 1px solid #cbd5e1;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.3s;
+
+  background: #f8fafc;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+  border-color: #6366f1;
+
+  background: white;
+
+  box-shadow:
+    0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+.primary-btn {
+
+  margin-top: 22px;
+
+  padding: 13px 25px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6366f1,
+      #8b5cf6
+    );
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 20px
+    rgba(99, 102, 241, 0.35);
+}
+
+
+.edit-btn {
+
+  background: #f59e0b;
+
+  color: white;
+
+  border: none;
+
+  padding: 8px 14px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  margin-right: 8px;
+}
+
+
+.delete-btn {
+
+  background: #ef4444;
+
+  color: white;
+
+  border: none;
+
+  padding: 8px 14px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+
+/* ============================= */
+/* TABLE CARD */
+/* ============================= */
+
+.table-card {
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 35px
+    rgba(30, 41, 59, 0.08);
+
+  overflow: hidden;
+}
+
+.table-card h2 {
+
+  margin-bottom: 22px;
+
+  color: #312e81;
+}
+
+
+/* ============================= */
+/* TABLE */
+/* ============================= */
+
+.table-wrapper {
+
+  width: 100%;
+
+  overflow-x: auto;
+
+  border-radius: 15px;
+}
+
+table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 850px;
+}
+
+thead {
+
+  background:
+    linear-gradient(
+      135deg,
+      #4f46e5,
+      #7c3aed
+    );
+}
+
+th {
+
+  padding: 16px;
+
+  color: white;
+
+  text-align: left;
+
+  font-weight: 600;
+}
+
+td {
+
+  padding: 16px;
+
+  border-bottom:
+    1px solid #e2e8f0;
+
+  color: #475569;
+}
+
+tbody tr {
+
+  transition: 0.2s;
+}
+
+tbody tr:hover {
+
+  background: #f8f7ff;
+}
+
+
+/* ============================= */
+/* STATUS */
+/* ============================= */
+
+.status {
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  display: inline-block;
+}
+
+.status.active {
+
+  background: #dcfce7;
+
+  color: #15803d;
+}
+
+.status.inactive {
+
+  background: #fee2e2;
+
+  color: #dc2626;
+}
+
+.status.scheduled {
+
+  background: #dbeafe;
+
+  color: #2563eb;
+}
+
+.status.completed {
+
+  background: #dcfce7;
+
+  color: #16a34a;
+}
+
+.status.cancelled {
+
+  background: #fee2e2;
+
+  color: #dc2626;
+}
+
+
+/* ============================= */
+/* DASHBOARD */
+/* ============================= */
+
+.dashboard-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 22px;
+
+  margin-bottom: 35px;
+}
+
+.dashboard-card-link {
+  color: inherit;
+}
+
+.dashboard-card {
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  color: white;
+
+  transition: 0.3s;
+
+  min-height: 150px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  box-shadow:
+    0 10px 25px
+    rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-card:hover {
+
+  transform:
+    translateY(-7px);
+
+  box-shadow:
+    0 18px 35px
+    rgba(0, 0, 0, 0.18);
+}
+
+.dashboard-card h3 {
+
+  font-size: 16px;
+
+  font-weight: 500;
+}
+
+.dashboard-card h2 {
+
+  font-size: 40px;
+
+  font-weight: 700;
+}
+
+
+/* DIFFERENT CARD COLORS */
+
+.dashboard-card-link:nth-child(1)
+.dashboard-card {
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #4f46e5
+    );
+}
+
+.dashboard-card-link:nth-child(2)
+.dashboard-card {
+
+  background:
+    linear-gradient(
+      135deg,
+      #ec4899,
+      #be185d
+    );
+}
+
+.dashboard-card-link:nth-child(3)
+.dashboard-card {
+
+  background:
+    linear-gradient(
+      135deg,
+      #f97316,
+      #ea580c
+    );
+}
+
+.dashboard-card-link:nth-child(4)
+.dashboard-card {
+
+  background:
+    linear-gradient(
+      135deg,
+      #14b8a6,
+      #0f766e
+    );
+}
+
+.dashboard-card-link:nth-child(5)
+.dashboard-card {
+
+  background:
+    linear-gradient(
+      135deg,
+      #8b5cf6,
+      #6d28d9
+    );
+}
+
+
+/* ============================= */
+/* AI SYMPTOM CHECKER */
+/* ============================= */
+
+.ai-container {
+
+  max-width: 900px;
+
+  margin: auto;
+}
+
+.ai-card {
+
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 15px 40px
+    rgba(79, 70, 229, 0.12);
+}
+
+.ai-title {
+
+  font-size: 32px;
+
+  font-weight: 700;
+
+  color: #4f46e5;
+
+  margin-bottom: 10px;
+}
+
+.ai-description {
+
+  color: #64748b;
+
+  margin-bottom: 25px;
+}
+
+.ai-result {
+
+  margin-top: 25px;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef2ff,
+      #f5f3ff
+    );
+
+  border:
+    1px solid #c7d2fe;
+}
+
+.ai-result h3 {
+
+  color: #4338ca;
+
+  margin-bottom: 12px;
+}
+
+
+/* ============================= */
+/* EMPTY DATA */
+/* ============================= */
+
+.no-data {
+
+  text-align: center;
+
+  padding: 35px;
+
+  color: #94a3b8;
+}
+
+
+/* ============================= */
+/* ERROR */
+/* ============================= */
+
+.error-message {
+
+  background: #fee2e2;
+
+  color: #dc2626;
+
+  padding: 14px;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .page-container {
+    padding: 20px;
+  }
+
+  .page-header h1 {
+    font-size: 26px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card {
+    padding: 20px;
+  }
+
+}
+
+/* ================================= */
+/* AI SYMPTOM CHECKER */
+/* ================================= */
+
+.symptom-container {
+
+    max-width: 950px;
+
+    margin: auto;
+
+}
+
+
+.symptom-card {
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 15px 45px
+        rgba(79, 70, 229, 0.12);
+
+    border:
+        1px solid #e0e7ff;
+
+}
+
+
+.symptom-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 38px;
+
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6366f1,
+            #8b5cf6
+        );
+
+    box-shadow:
+        0 10px 25px
+        rgba(99, 102, 241, 0.3);
+
+}
+
+
+.symptom-card h2 {
+
+    color: #312e81;
+
+    font-size: 27px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.symptom-description {
+
+    color: #64748b;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+
+}
+
+
+.symptom-card textarea {
+
+    width: 100%;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    border:
+        1px solid #cbd5e1;
+
+    background: #f8fafc;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    transition: 0.3s;
+
+}
+
+
+.symptom-card textarea:focus {
+
+    outline: none;
+
+    border-color: #6366f1;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(99, 102, 241, 0.12);
+
+}
+
+
+.symptom-actions {
+
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+}
+
+
+.secondary-btn {
+
+    margin-top: 22px;
+
+    padding: 13px 25px;
+
+    border-radius: 12px;
+
+    border:
+        1px solid #cbd5e1;
+
+    background: white;
+
+    color: #475569;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.secondary-btn:hover {
+
+    background: #f1f5f9;
+
+}
+
+
+/* ================================= */
+/* AI RESULT */
+/* ================================= */
+
+.ai-result-card {
+
+    margin-top: 30px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 15px 45px
+        rgba(16, 185, 129, 0.1);
+
+    border:
+        1px solid #d1fae5;
+
+}
+
+
+.result-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    padding-bottom: 18px;
+
+    border-bottom:
+        1px solid #e2e8f0;
+
+}
+
+
+.result-header h2 {
+
+    color: #047857;
+
+}
+
+
+.ai-badge {
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.result-content {
+
+    background: #f0fdf4;
+
+    padding: 22px;
+
+    border-radius: 15px;
+
+    color: #334155;
+
+    line-height: 1.8;
+
+}
+
+
+.result-content pre {
+
+    white-space: pre-wrap;
+
+    font-family: "Poppins", sans-serif;
+
+    margin: 0;
+
+}
+
+
+.medical-warning {
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #fff7ed;
+
+    color: #c2410c;
+
+    border:
+        1px solid #fed7aa;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .symptom-card {
+
+        padding: 25px;
+
+    }
+
+
+    .symptom-actions {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .result-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+
+    }
+
+}
+/* =========================================
+   GLOBAL BUTTON STYLING
+========================================= */
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   TABLE ACTION BUTTON CONTAINER
+========================================= */
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   EDIT BUTTON
+========================================= */
+
+.edit-btn {
+    background: linear-gradient(
+        135deg,
+        #f59e0b,
+        #f97316
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 9px 16px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    box-shadow:
+        0 4px 10px
+        rgba(245, 158, 11, 0.25);
+}
+
+
+.edit-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px
+        rgba(245, 158, 11, 0.4);
+
+    filter: brightness(1.05);
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.delete-btn {
+    background: linear-gradient(
+        135deg,
+        #ef4444,
+        #dc2626
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 9px 16px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    box-shadow:
+        0 4px 10px
+        rgba(239, 68, 68, 0.25);
+}
+
+
+.delete-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px
+        rgba(239, 68, 68, 0.4);
+
+    filter: brightness(1.05);
+}
+
+
+/* =========================================
+   DEACTIVATE BUTTON
+========================================= */
+
+.deactivate-btn {
+    background: linear-gradient(
+        135deg,
+        #64748b,
+        #475569
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 9px 16px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    box-shadow:
+        0 4px 10px
+        rgba(71, 85, 105, 0.25);
+}
+
+
+.deactivate-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px
+        rgba(71, 85, 105, 0.4);
+
+    filter: brightness(1.1);
+}
+
+
+/* =========================================
+   ACTIVATE BUTTON
+========================================= */
+
+.activate-btn {
+    background: linear-gradient(
+        135deg,
+        #22c55e,
+        #16a34a
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 9px 16px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    box-shadow:
+        0 4px 10px
+        rgba(34, 197, 94, 0.25);
+}
+
+
+.activate-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px
+        rgba(34, 197, 94, 0.4);
+
+    filter: brightness(1.1);
+}
+
+
+/* =========================================
+   PRIMARY ADD BUTTON
+========================================= */
+
+.primary-btn,
+.add-btn {
+    background: linear-gradient(
+        135deg,
+        #14b8a6,
+        #059669
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 11px 20px;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    box-shadow:
+        0 5px 15px
+        rgba(5, 150, 105, 0.25);
+}
+
+
+.primary-btn:hover,
+.add-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(5, 150, 105, 0.35);
+}
+
+
+/* =========================================
+   SECONDARY BUTTON
+========================================= */
+
+.secondary-btn {
+    background: #e2e8f0;
+
+    color: #334155;
+
+    border: none;
+
+    padding: 11px 20px;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+
+.secondary-btn:hover {
+    background: #cbd5e1;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   STATUS BADGES
+========================================= */
+
+.status-active {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+    font-weight: 600;
+
+    font-size: 14px;
+}
+
+
+.status-inactive {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    font-weight: 600;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   TABLE ACTION COLUMN
+========================================= */
+
+td:last-child {
+    min-width: 250px;
+}
+
+
+/* =========================================
+   RESPONSIVE ACTION BUTTONS
+========================================= */
+
+@media (max-width: 900px) {
+
+    .action-buttons {
+        gap: 7px;
+    }
+
+
+    .edit-btn,
+    .delete-btn,
+    .deactivate-btn,
+    .activate-btn {
+
+        padding: 8px 12px;
+
+        font-size: 13px;
+    }
+
+}
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: max-content;
+}
+
+
+.activate-btn {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+
+.activate-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.deactivate-btn {
+    background: linear-gradient(135deg, #64748b, #475569);
+    color: white;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+
+.deactivate-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.delete-btn {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+
+.delete-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.action-buttons button {
+    white-space: nowrap;
+}
+/* =========================================
+   DOCTOR ACTION BUTTONS
+========================================= */
+
+.doctor-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   COMMON ACTION BUTTON STYLE
+========================================= */
+
+.doctor-actions button {
+    border: none;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: all 0.25s ease;
+    min-width: 85px;
+}
+
+
+/* =========================================
+   EDIT BUTTON
+========================================= */
+
+.edit-button {
+    background: linear-gradient(
+        135deg,
+        #f59e0b,
+        #f97316
+    );
+    box-shadow: 0 4px 10px rgba(
+        245,
+        158,
+        11,
+        0.25
+    );
+}
+
+.edit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(
+        245,
+        158,
+        11,
+        0.4
+    );
+}
+
+
+/* =========================================
+   ACTIVATE / DEACTIVATE BUTTON
+========================================= */
+
+.status-button {
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #8b5cf6
+    );
+    box-shadow: 0 4px 10px rgba(
+        99,
+        102,
+        241,
+        0.25
+    );
+}
+
+.status-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(
+        99,
+        102,
+        241,
+        0.4
+    );
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.delete-button {
+    background: linear-gradient(
+        135deg,
+        #ef4444,
+        #dc2626
+    );
+    box-shadow: 0 4px 10px rgba(
+        239,
+        68,
+        68,
+        0.25
+    );
+}
+
+.delete-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(
+        239,
+        68,
+        68,
+        0.4
+    );
+}
+
+
+/* =========================================
+   BUTTON CLICK EFFECT
+========================================= */
+
+.doctor-actions button:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .doctor-actions {
+        gap: 8px;
+    }
+
+    .doctor-actions button {
+        min-width: 75px;
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+}
+/* =========================================
+   COMMON ACTION BUTTON CONTAINERS
+========================================= */
+
+.doctor-actions,
+.patient-actions,
+.appointment-actions,
+.medical-record-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   COMMON ACTION BUTTON STYLE
+========================================= */
+
+.doctor-actions button,
+.patient-actions button,
+.appointment-actions button,
+.medical-record-actions button {
+    border: none;
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    min-width: 85px;
+    transition: all 0.25s ease;
+}
+
+
+/* =========================================
+   EDIT BUTTON - ORANGE
+========================================= */
+
+.edit-button {
+    background: linear-gradient(
+        135deg,
+        #f59e0b,
+        #f97316
+    ) !important;
+
+    color: white !important;
+
+    box-shadow: 0 4px 10px rgba(
+        245,
+        158,
+        11,
+        0.25
+    );
+}
+
+
+.edit-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 16px rgba(
+        245,
+        158,
+        11,
+        0.45
+    );
+}
+
+
+/* =========================================
+   STATUS BUTTON - PURPLE
+========================================= */
+
+.status-button {
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #8b5cf6
+    ) !important;
+
+    color: white !important;
+
+    box-shadow: 0 4px 10px rgba(
+        99,
+        102,
+        241,
+        0.25
+    );
+}
+
+
+.status-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 16px rgba(
+        99,
+        102,
+        241,
+        0.45
+    );
+}
+
+
+/* =========================================
+   DELETE BUTTON - RED
+========================================= */
+
+.delete-button {
+    background: linear-gradient(
+        135deg,
+        #ef4444,
+        #dc2626
+    ) !important;
+
+    color: white !important;
+
+    box-shadow: 0 4px 10px rgba(
+        239,
+        68,
+        68,
+        0.25
+    );
+}
+
+
+.delete-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 16px rgba(
+        239,
+        68,
+        68,
+        0.45
+    );
+}
+
+
+/* =========================================
+   COMPLETE BUTTON - GREEN
+========================================= */
+
+.complete-button {
+    background: linear-gradient(
+        135deg,
+        #10b981,
+        #059669
+    ) !important;
+
+    color: white !important;
+
+    box-shadow: 0 4px 10px rgba(
+        16,
+        185,
+        129,
+        0.25
+    );
+}
+
+
+.complete-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 16px rgba(
+        16,
+        185,
+        129,
+        0.45
+    );
+}
+
+
+/* =========================================
+   CANCEL BUTTON - RED/PINK
+========================================= */
+
+.cancel-action-button {
+    background: linear-gradient(
+        135deg,
+        #ec4899,
+        #e11d48
+    ) !important;
+
+    color: white !important;
+}
+
+
+.cancel-action-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   BUTTON CLICK EFFECT
+========================================= */
+
+.doctor-actions button:active,
+.patient-actions button:active,
+.appointment-actions button:active,
+.medical-record-actions button:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================================
+   TABLE ACTION COLUMN
+========================================= */
+
+td:last-child {
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .doctor-actions,
+    .patient-actions,
+    .appointment-actions,
+    .medical-record-actions {
+        gap: 8px;
+    }
+
+    .doctor-actions button,
+    .patient-actions button,
+    .appointment-actions button,
+    .medical-record-actions button {
+        min-width: 75px;
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+}
+/* =========================================
+   MEDICAL RECORD ACTION BUTTONS
+========================================= */
+
+.medical-record-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+
+/* COMMON MEDICAL RECORD BUTTON */
+
+.medical-record-actions button {
+    position: relative;
+    overflow: hidden;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 10px 20px;
+
+    min-width: 90px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    color: white !important;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =========================================
+   EDIT - SHINY ORANGE
+========================================= */
+
+.medical-record-actions .edit-button {
+
+    background: linear-gradient(
+        135deg,
+        #ffb703,
+        #fb8500,
+        #f97316
+    ) !important;
+
+    box-shadow:
+        0 5px 12px rgba(251, 133, 0, 0.35),
+        inset 0 1px 1px rgba(255, 255, 255, 0.45);
+
+}
+
+
+/* =========================================
+   DELETE - SHINY RED
+========================================= */
+
+.medical-record-actions .delete-button {
+
+    background: linear-gradient(
+        135deg,
+        #ff6b6b,
+        #ef4444,
+        #dc2626
+    ) !important;
+
+    box-shadow:
+        0 5px 12px rgba(239, 68, 68, 0.35),
+        inset 0 1px 1px rgba(255, 255, 255, 0.45);
+
+}
+
+
+/* =========================================
+   SHINE EFFECT
+========================================= */
+
+.medical-record-actions button::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent
+    );
+
+    transform: skewX(-25deg);
+
+    transition: left 0.5s ease;
+
+}
+
+
+/* SHINE ON HOVER */
+
+.medical-record-actions button:hover::before {
+
+    left: 150%;
+
+}
+
+
+/* HOVER EFFECT */
+
+.medical-record-actions button:hover {
+
+    transform:
+        translateY(-3px)
+        scale(1.03);
+
+}
+
+
+/* EDIT GLOW */
+
+.medical-record-actions .edit-button:hover {
+
+    box-shadow:
+        0 8px 22px rgba(251, 133, 0, 0.55),
+        0 0 15px rgba(255, 183, 3, 0.35);
+
+}
+
+
+/* DELETE GLOW */
+
+.medical-record-actions .delete-button:hover {
+
+    box-shadow:
+        0 8px 22px rgba(239, 68, 68, 0.55),
+        0 0 15px rgba(255, 80, 80, 0.35);
+
+}
+
+
+/* CLICK EFFECT */
+
+.medical-record-actions button:active {
+
+    transform:
+        scale(0.95);
+
+}
+/* =========================================
+   ACTION BUTTONS - COMMON FOR ALL PAGES
+========================================= */
+
+.actions-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 180px;
+}
+
+
+/* COMMON BUTTON STYLE */
+
+.action-btn {
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   EDIT BUTTON
+========================================= */
+
+.edit-btn {
+    background: linear-gradient(
+        135deg,
+        #ffb300,
+        #ff7b00
+    );
+}
+
+.edit-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(255, 123, 0, 0.35);
+}
+
+.edit-btn:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.delete-btn {
+    background: linear-gradient(
+        135deg,
+        #ff4b4b,
+        #e60000
+    );
+}
+
+.delete-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(230, 0, 0, 0.35);
+}
+
+.delete-btn:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================================
+   DEACTIVATE BUTTON
+========================================= */
+
+.deactivate-btn {
+    background: linear-gradient(
+        135deg,
+        #ff9800,
+        #f57c00
+    );
+}
+
+.deactivate-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(245, 124, 0, 0.35);
+}
+
+
+/* =========================================
+   ACTIVATE BUTTON
+========================================= */
+
+.activate-btn {
+    background: linear-gradient(
+        135deg,
+        #20bf6b,
+        #0fb9b1
+    );
+}
+
+.activate-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(32, 191, 107, 0.35);
+}
+
+
+/* =========================================
+   COMPLETE BUTTON
+========================================= */
+
+.complete-btn {
+    background: linear-gradient(
+        135deg,
+        #16a085,
+        #27ae60
+    );
+}
+
+.complete-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(22, 160, 133, 0.35);
+}
+
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.cancel-btn {
+    background: linear-gradient(
+        135deg,
+        #ff6b6b,
+        #ee5253
+    );
+}
+
+.cancel-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(238, 82, 83, 0.35);
+}
+
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.add-btn {
+    background: linear-gradient(
+        135deg,
+        #20bf6b,
+        #0984e3
+    );
+
+    border: none;
+    color: white;
+
+    padding: 13px 24px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 18px rgba(9, 132, 227, 0.25);
+
+    transition: all 0.25s ease;
+}
+
+.add-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(9, 132, 227, 0.35);
+}
+
+
+/* =========================================
+   TABLE ACTION COLUMN
+========================================= */
+
+table td:last-child {
+    white-space: nowrap;
+}
+/* =========================================
+   PAGE BACKGROUND
+========================================= */
+
+.page-container {
+    min-height: 100vh;
+
+    padding: 35px 45px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef4ff 0%,
+            #f7f9fc 50%,
+            #eaf7f5 100%
+        );
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    font-size: 34px;
+    font-weight: 700;
+
+    color: #263b63;
+
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: #667085;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.form-card {
+    background: rgba(255, 255, 255, 0.9);
+
+    padding: 30px;
+
+    border-radius: 22px;
+
+    margin-bottom: 35px;
+
+    box-shadow:
+        0 10px 35px rgba(31, 59, 100, 0.12);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.7);
+}
+
+
+/* =========================================
+   TABLE CARD
+========================================= */
+
+.table-card {
+    background: rgba(255, 255, 255, 0.92);
+
+    padding: 35px 30px;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 12px 35px rgba(31, 59, 100, 0.12);
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.8);
+}
+
+
+/* =========================================
+   TABLE TITLE
+========================================= */
+
+.table-card h2 {
+    font-size: 32px;
+
+    color: #2d3f6c;
+
+    margin-bottom: 30px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border-radius: 16px;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    min-width: 1000px;
+
+    background: white;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+table thead th {
+
+    padding: 22px 20px;
+
+    text-align: left;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2f66c5,
+            #4b38c8
+        );
+}
+
+
+/* FIRST HEADER ROUNDING */
+
+table thead th:first-child {
+
+    border-top-left-radius: 15px;
+
+}
+
+
+/* LAST HEADER ROUNDING */
+
+table thead th:last-child {
+
+    border-top-right-radius: 15px;
+
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+table tbody td {
+
+    padding: 20px;
+
+    font-size: 17px;
+
+    color: #34435a;
+
+    border-bottom:
+        1px solid #e5eaf2;
+
+    background:
+        rgba(255, 255, 255, 0.8);
+
+}
+
+
+/* HOVER EFFECT */
+
+table tbody tr:hover td {
+
+    background:
+        #f5f8ff;
+
+}
+
+
+/* =========================================
+   ACTIONS COLUMN
+========================================= */
+
+.actions-cell {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    min-width: 220px;
+
+}
+
+
+/* =========================================
+   COMMON ACTION BUTTON
+========================================= */
+
+.action-btn {
+
+    border: none;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    padding: 14px 24px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    min-width: 75px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+/* =========================================
+   EDIT BUTTON
+========================================= */
+
+.edit-btn {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffb300,
+            #ff7a00
+        );
+
+    box-shadow:
+        0 6px 15px
+        rgba(255, 140, 0, 0.30);
+
+}
+
+
+.edit-btn:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 22px
+        rgba(255, 140, 0, 0.40);
+
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.delete-btn {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4b4b,
+            #e60000
+        );
+
+    box-shadow:
+        0 6px 15px
+        rgba(230, 0, 0, 0.25);
+
+}
+
+
+.delete-btn:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 22px
+        rgba(230, 0, 0, 0.40);
+
+}
+
+
+/* =========================================
+   COMPLETE BUTTON
+========================================= */
+
+.complete-btn {
+
+    background:
+        linear-gradient(
+            135deg,
+            #20bf6b,
+            #0e9f6e
+        );
+
+    box-shadow:
+        0 6px 15px
+        rgba(32, 191, 107, 0.25);
+
+}
+
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.cancel-btn {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff6b6b,
+            #ee5253
+        );
+
+    box-shadow:
+        0 6px 15px
+        rgba(238, 82, 83, 0.25);
+
+}
+
+
+/* =========================================
+   DEACTIVATE BUTTON
+========================================= */
+
+.deactivate-btn {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff9f43,
+            #f36800
+        );
+
+}
+
+
+/* =========================================
+   ACTIVATE BUTTON
+========================================= */
+
+.activate-btn {
+
+    background:
+        linear-gradient(
+            135deg,
+            #26de81,
+            #20bf6b
+        );
+
+}
+
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.add-btn {
+
+    border: none;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    padding: 16px 28px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            135deg,
+            #20a66a,
+            #1677c8
+        );
+
+    box-shadow:
+        0 8px 20px
+        rgba(22, 119, 200, 0.25);
+
+}
+
+
+.add-btn:hover {
+
+    transform:
+        translateY(-2px);
+
+}
+/* ========================================
+   MEDICAL RECORDS ACTION BUTTONS
+======================================== */
+
+.medical-records-page .action-buttons,
+.medical-record-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    white-space: nowrap;
+}
+
+.medical-records-page .edit-btn,
+.medical-record-actions .edit-btn {
+    background: linear-gradient(135deg, #f59e0b, #ff8c00);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(245, 158, 11, 0.3);
+    transition: all 0.3s ease;
+}
+
+.medical-records-page .edit-btn:hover,
+.medical-record-actions .edit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(245, 158, 11, 0.45);
+}
+
+.medical-records-page .delete-btn,
+.medical-record-actions .delete-btn {
+    background: linear-gradient(135deg, #ff4b4b, #f31212);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(244, 63, 94, 0.3);
+    transition: all 0.3s ease;
+}
+
+.medical-records-page .delete-btn:hover,
+.medical-record-actions .delete-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(244, 63, 94, 0.45);
+}
+/* =========================================
+   MEDICAL RECORDS - ACTION BUTTONS
+========================================= */
+
+.medical-record-table .action-buttons {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    white-space: nowrap !important;
+}
+
+
+/* EDIT BUTTON */
+
+.medical-record-table .edit-button {
+    background: linear-gradient(
+        135deg,
+        #ffb300,
+        #ff7a00
+    ) !important;
+
+    color: #ffffff !important;
+
+    border: none !important;
+
+    padding: 13px 22px !important;
+
+    min-width: 78px !important;
+
+    border-radius: 10px !important;
+
+    font-size: 16px !important;
+
+    font-weight: 700 !important;
+
+    cursor: pointer !important;
+
+    box-shadow:
+        0 6px 16px rgba(255, 145, 0, 0.35) !important;
+
+    transition: all 0.25s ease !important;
+}
+
+
+.medical-record-table .edit-button:hover {
+    transform: translateY(-3px) !important;
+
+    box-shadow:
+        0 10px 24px rgba(255, 145, 0, 0.5) !important;
+}
+
+
+/* DELETE BUTTON */
+
+.medical-record-table .delete-button {
+    background: linear-gradient(
+        135deg,
+        #ff4b4b,
+        #f31212
+    ) !important;
+
+    color: #ffffff !important;
+
+    border: none !important;
+
+    padding: 13px 22px !important;
+
+    min-width: 90px !important;
+
+    border-radius: 10px !important;
+
+    font-size: 16px !important;
+
+    font-weight: 700 !important;
+
+    cursor: pointer !important;
+
+    box-shadow:
+        0 6px 16px rgba(244, 63, 94, 0.35) !important;
+
+    transition: all 0.25s ease !important;
+}
+
+
+.medical-record-table .delete-button:hover {
+    transform: translateY(-3px) !important;
+
+    box-shadow:
+        0 10px 24px rgba(244, 63, 94, 0.5) !important;
+}
+/* =========================================
+   COMMON BUTTON STYLES
+========================================= */
+
+.primary-button,
+.add-button {
+    background: linear-gradient(
+        135deg,
+        #1fa57a,
+        #2d78b8
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 30px;
+
+    min-width: 200px;
+
+    height: 62px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 8px 20px rgba(
+            31,
+            165,
+            122,
+            0.25
+        );
+}
+
+
+/* Hover */
+
+.primary-button:hover,
+.add-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(
+            31,
+            165,
+            122,
+            0.35
+        );
+
+}
+/* ========================================
+   HOME PAGE
+======================================== */
+
+.home-page {
+
+    min-height: 100vh;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef4ff,
+            #f8fbff,
+            #e8f7f5
+        );
+
+}
+
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero-section {
+
+    width: 100%;
+
+    min-height: 330px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 24px;
+
+    padding: 50px 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #273c9b,
+            #4338ca,
+            #2563a8
+        );
+
+    color: white;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.15);
+
+}
+
+
+.hero-content {
+
+    max-width: 850px;
+
+}
+
+
+.hero-icon {
+
+    font-size: 60px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.hero-section h1 {
+
+    font-size: 52px;
+
+    margin-bottom: 10px;
+
+    font-weight: 800;
+
+}
+
+
+.hero-section h2 {
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+
+    opacity: 0.95;
+
+}
+
+
+.hero-section p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    opacity: 0.9;
+
+}
+
+
+/* ========================================
+   FEATURES SECTION
+======================================== */
+
+.features-section {
+
+    margin-top: 50px;
+
+    text-align: center;
+
+}
+
+
+.features-section h2 {
+
+    font-size: 38px;
+
+    color: #263b65;
+
+    margin-bottom: 10px;
+
+}
+
+
+.features-description {
+
+    font-size: 17px;
+
+    color: #64748b;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* ========================================
+   FEATURE GRID
+======================================== */
+
+.features-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px, 1fr)
+        );
+
+    gap: 25px;
+
+    max-width: 1400px;
+
+    margin: auto;
+
+}
+
+
+/* ========================================
+   FEATURE CARD
+======================================== */
+
+.feature-card {
+
+    display: block;
+
+    text-decoration: none;
+
+    color: #263b65;
+
+    padding: 35px 25px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    border:
+        1px solid
+        rgba(100, 116, 139, 0.12);
+
+    box-shadow:
+        0 10px 30px
+        rgba(30, 64, 175, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    cursor: pointer;
+
+}
+
+
+.feature-card:hover {
+
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 20px 40px
+        rgba(30, 64, 175, 0.18);
+
+}
+
+
+.feature-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: auto;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 38px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e0e7ff,
+            #dbeafe
+        );
+
+}
+
+
+.feature-card h3 {
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+
+    color: #263b65;
+
+}
+
+
+.feature-card p {
+
+    color: #64748b;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+
+}
+
+
+/* ========================================
+   AI FEATURE SPECIAL
+======================================== */
+
+.ai-feature {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ecfeff,
+            #f0fdfa
+        );
+
+}
+
+
+.ai-feature .feature-icon {
+
+    background:
+        linear-gradient(
+            135deg,
+            #14b8a6,
+            #0f766e
+        );
+
+}

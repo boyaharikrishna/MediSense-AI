@@ -1,0 +1,2391 @@
+/* ================================
+   GLOBAL PAGE
+================================ */
+
+.page-container {
+    min-height: 100vh;
+    padding: 35px;
+    background: linear-gradient(
+        135deg,
+        #eef6ff,
+        #f7f3ff,
+        #eefcf8
+    );
+}
+
+
+/* ================================
+   PAGE TITLE
+================================ */
+
+.page-container h1 {
+    font-size: 40px;
+    margin: 0;
+    color: #1f2937;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    color: #64748b;
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+
+
+/* ================================
+   DASHBOARD GRID
+================================ */
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 25px;
+
+    margin-bottom: 40px;
+}
+
+
+/* ================================
+   CARD LINK
+================================ */
+
+.dashboard-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ================================
+   DASHBOARD CARD
+================================ */
+
+.dashboard-card {
+    position: relative;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    color: white;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Hover */
+
+.dashboard-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 18px 35px
+        rgba(0, 0, 0, 0.18);
+}
+
+
+/* CARD COLORS */
+
+.dashboard-card:nth-child(1) {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #60a5fa
+    );
+}
+
+
+.dashboard-card:nth-child(2) {
+    background: linear-gradient(
+        135deg,
+        #9333ea,
+        #c084fc
+    );
+}
+
+
+.dashboard-card:nth-child(3) {
+    background: linear-gradient(
+        135deg,
+        #f97316,
+        #fbbf24
+    );
+}
+
+
+.dashboard-card:nth-child(4) {
+    background: linear-gradient(
+        135deg,
+        #059669,
+        #34d399
+    );
+}
+
+
+.dashboard-card:nth-child(5) {
+    background: linear-gradient(
+        135deg,
+        #e11d48,
+        #fb7185
+    );
+}
+
+
+/* Card Text */
+
+.dashboard-card h3 {
+
+    margin: 0;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: white;
+}
+
+
+.dashboard-card h2 {
+
+    margin: 22px 0 0;
+
+    font-size: 42px;
+
+    color: white;
+}
+
+
+/* ================================
+   TABLE SECTION
+================================ */
+
+.table-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(15, 23, 42, 0.10);
+}
+
+
+.recent-section {
+
+    margin-top: 20px;
+}
+
+
+.table-card h2 {
+
+    margin-top: 0;
+
+    font-size: 28px;
+
+    color: #1e293b;
+}
+
+
+/* ================================
+   TABLE
+================================ */
+
+.table-wrapper {
+
+    overflow-x: auto;
+
+    margin-top: 20px;
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+
+th {
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    color: white;
+
+    padding: 16px;
+
+    text-align: left;
+
+    font-size: 15px;
+}
+
+
+td {
+
+    padding: 16px;
+
+    border-bottom:
+        1px solid #e2e8f0;
+
+    color: #334155;
+}
+
+
+tbody tr {
+
+    transition:
+        background 0.2s ease;
+}
+
+
+tbody tr:hover {
+
+    background:
+        #eff6ff;
+}
+
+
+/* ================================
+   STATUS
+================================ */
+
+td:last-child {
+
+    font-weight: 600;
+
+    color: #059669;
+}
+
+
+/* ================================
+   NO DATA
+================================ */
+
+.no-data {
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #64748b;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .page-container {
+
+        padding: 20px;
+
+    }
+
+
+    .page-container h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .dashboard-card h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .table-card {
+
+        padding: 18px;
+
+    }
+
+}
+/* ================================
+   PAGE CONTAINER
+================================ */
+
+.page-container {
+  padding: 30px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f4f7ff, #eef8ff);
+}
+
+
+/* ================================
+   PAGE HEADINGS
+================================ */
+
+.page-container h1 {
+  color: #1e293b;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.page-subtitle {
+  color: #64748b;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+
+/* ================================
+   FORM CARD
+================================ */
+
+.form-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+
+  margin-bottom: 30px;
+}
+
+.form-card h2 {
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+
+/* ================================
+   FORM GRID
+================================ */
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 18px;
+}
+
+
+/* ================================
+   FORM GROUP
+================================ */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #334155;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+  padding: 12px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(37, 99, 235, 0.15);
+
+}
+
+
+/* ================================
+   TEXTAREA
+================================ */
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.primary-btn {
+
+  background:
+    linear-gradient(135deg,
+      #2563eb,
+      #7c3aed);
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 22px;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+
+.primary-btn:hover {
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 8px 18px
+    rgba(37, 99, 235, 0.3);
+
+}
+
+
+/* ================================
+   TABLE CARD
+================================ */
+
+.table-card {
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px
+    rgba(0, 0, 0, 0.08);
+
+}
+
+
+.table-card h2 {
+
+  color: #1e293b;
+
+  margin-bottom: 20px;
+
+}
+
+
+/* ================================
+   TABLE
+================================ */
+
+.table-wrapper {
+
+  overflow-x: auto;
+
+}
+
+
+table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+}
+
+
+table thead {
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  color: white;
+
+}
+
+
+table th {
+
+  padding: 16px;
+
+  text-align: left;
+
+  font-size: 15px;
+
+}
+
+
+table td {
+
+  padding: 16px;
+
+  color: #334155;
+
+  border-bottom:
+    1px solid #e2e8f0;
+
+}
+
+
+table tbody tr {
+
+  transition: 0.2s;
+
+}
+
+
+table tbody tr:hover {
+
+  background: #f1f5ff;
+
+}
+
+/* =========================================
+   MEDISENSE AI - GLOBAL BUTTON STYLES
+========================================= */
+
+button {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
+
+.primary-btn {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 12px rgba(37, 99, 235, 0.3);
+
+    margin-top: 10px;
+}
+
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(37, 99, 235, 0.4);
+
+    background: linear-gradient(
+        135deg,
+        #1d4ed8,
+        #4338ca
+    );
+}
+
+
+.primary-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   SECONDARY BUTTON
+========================================= */
+
+.secondary-btn {
+    background: #64748b;
+
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    margin-left: 10px;
+}
+
+
+.secondary-btn:hover {
+    background: #475569;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.add-btn {
+    background: linear-gradient(
+        135deg,
+        #10b981,
+        #059669
+    );
+
+    color: white;
+
+    padding: 12px 24px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+
+.add-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #059669,
+        #047857
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(16, 185, 129, 0.4);
+}
+
+
+/* =========================================
+   EDIT BUTTON
+========================================= */
+
+.edit-btn {
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #2563eb
+    );
+
+    color: white;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    margin-right: 8px;
+
+    font-size: 13px;
+}
+
+
+.edit-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   DEACTIVATE BUTTON
+========================================= */
+
+.deactivate-btn {
+    background: linear-gradient(
+        135deg,
+        #f59e0b,
+        #d97706
+    );
+
+    color: white;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    margin-right: 8px;
+
+    font-size: 13px;
+}
+
+
+.deactivate-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #d97706,
+        #b45309
+    );
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   ACTIVATE BUTTON
+========================================= */
+
+.activate-btn {
+    background: linear-gradient(
+        135deg,
+        #22c55e,
+        #16a34a
+    );
+
+    color: white;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    margin-right: 8px;
+
+    font-size: 13px;
+}
+
+
+.activate-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #16a34a,
+        #15803d
+    );
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.delete-btn {
+    background: linear-gradient(
+        135deg,
+        #ef4444,
+        #dc2626
+    );
+
+    color: white;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    box-shadow:
+        0 3px 8px rgba(239, 68, 68, 0.2);
+}
+
+
+.delete-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #dc2626,
+        #b91c1c
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 14px rgba(239, 68, 68, 0.35);
+}
+
+
+/* =========================================
+   ACTION BUTTON CONTAINER
+========================================= */
+
+.action-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   FORM BUTTON AREA
+========================================= */
+
+.form-actions {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   FORM INPUTS
+========================================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border-radius: 10px;
+
+    border: 1px solid #cbd5e1;
+
+    font-size: 16px;
+
+    box-sizing: border-box;
+
+    transition: all 0.25s ease;
+
+    background: #ffffff;
+
+    color: #1e293b;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+
+/* =========================================
+   PAGE CONTAINER
+========================================= */
+
+.page-container {
+    padding: 30px;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc,
+            #eef2ff
+        );
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.page-header {
+    margin-bottom: 28px;
+}
+
+
+.page-header h1 {
+    color: #1e293b;
+
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+
+.page-header p {
+    color: #64748b;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.form-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.08);
+
+    margin-bottom: 30px;
+
+    border:
+        1px solid #e2e8f0;
+}
+
+
+/* =========================================
+   TABLE CARD
+========================================= */
+
+.table-card {
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.08);
+
+    overflow-x: auto;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+}
+
+
+table thead {
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #4f46e5
+        );
+}
+
+
+table th {
+    color: white;
+
+    padding: 16px;
+
+    text-align: left;
+
+    font-size: 15px;
+}
+
+
+table td {
+    padding: 16px;
+
+    border-bottom:
+        1px solid #e2e8f0;
+
+    color: #334155;
+}
+
+
+table tbody tr {
+    transition: 0.2s ease;
+}
+
+
+table tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   STATUS BADGES
+========================================= */
+
+.status-active {
+    background: #dcfce7;
+
+    color: #15803d;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-weight: 600;
+
+    font-size: 13px;
+}
+
+
+.status-inactive {
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-weight: 600;
+
+    font-size: 13px;
+}
+
+
+.status-scheduled {
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-weight: 600;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .page-container {
+        padding: 15px;
+    }
+
+
+    .form-card {
+        padding: 18px;
+    }
+
+
+    .action-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .action-buttons button {
+        width: 100%;
+    }
+
+
+    table {
+        min-width: 800px;
+    }
+
+}
+/* =========================================
+   COLORFUL BUTTON SYSTEM
+========================================= */
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+
+/* =========================================
+   ADD BUTTON - GREEN
+========================================= */
+
+.add-btn {
+    background: linear-gradient(
+        135deg,
+        #1abc9c,
+        #0b8f72
+    );
+
+    color: #ffffff;
+
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 18px
+        rgba(22, 160, 133, 0.25);
+
+    transition: all 0.25s ease;
+}
+
+
+.add-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 24px
+        rgba(22, 160, 133, 0.35);
+
+    background: linear-gradient(
+        135deg,
+        #159b84,
+        #08745c
+    );
+}
+
+
+.add-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   EDIT BUTTON - ORANGE
+========================================= */
+
+.edit-btn {
+    background: linear-gradient(
+        135deg,
+        #fbbf24,
+        #f59e0b
+    );
+
+    color: #ffffff;
+
+    border: none;
+
+    padding: 11px 18px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 12px
+        rgba(245, 158, 11, 0.30);
+
+    transition: all 0.25s ease;
+}
+
+
+.edit-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #f59e0b,
+        #d97706
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px
+        rgba(245, 158, 11, 0.40);
+}
+
+
+.edit-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   DELETE BUTTON - RED
+========================================= */
+
+.delete-btn {
+    background: linear-gradient(
+        135deg,
+        #ff5f5f,
+        #ef4444
+    );
+
+    color: #ffffff;
+
+    border: none;
+
+    padding: 11px 18px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 12px
+        rgba(239, 68, 68, 0.30);
+
+    transition: all 0.25s ease;
+}
+
+
+.delete-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #ef4444,
+        #dc2626
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px
+        rgba(239, 68, 68, 0.40);
+}
+
+
+.delete-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   ACTIVATE BUTTON - GREEN
+========================================= */
+
+.activate-btn {
+    background: linear-gradient(
+        135deg,
+        #34d399,
+        #16a34a
+    );
+
+    color: white;
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 5px 12px
+        rgba(22, 163, 74, 0.25);
+}
+
+
+.activate-btn:hover {
+    transform: translateY(-2px);
+
+    background: linear-gradient(
+        135deg,
+        #22c55e,
+        #15803d
+    );
+}
+
+
+/* =========================================
+   DEACTIVATE BUTTON - PURPLE
+========================================= */
+
+.deactivate-btn {
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #6d28d9
+    );
+
+    color: white;
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 5px 12px
+        rgba(109, 40, 217, 0.25);
+}
+
+
+.deactivate-btn:hover {
+    transform: translateY(-2px);
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #5b21b6
+    );
+}
+
+
+/* =========================================
+   CANCEL / CLEAR BUTTON
+========================================= */
+
+.secondary-btn {
+    background: linear-gradient(
+        135deg,
+        #64748b,
+        #475569
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+}
+
+
+.secondary-btn:hover {
+    transform: translateY(-2px);
+
+    background: linear-gradient(
+        135deg,
+        #475569,
+        #334155
+    );
+}
+
+
+/* =========================================
+   ACTION BUTTON CONTAINER
+========================================= */
+
+.action-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.form-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   DISABLED BUTTON
+========================================= */
+
+button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none !important;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .action-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .action-buttons button {
+        width: 100%;
+    }
+
+
+    .form-actions {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .form-actions button {
+        width: 100%;
+    }
+
+}
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.home-page {
+    min-height: 100vh;
+    padding: 30px;
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff 0%,
+            #f8faff 45%,
+            #e0f7fa 100%
+        );
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.home-hero {
+    min-height: 380px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    padding: 50px 30px;
+
+    margin-bottom: 50px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #4f46e5,
+            #7c3aed,
+            #db2777
+        );
+
+    box-shadow:
+        0 20px 45px
+        rgba(79, 70, 229, 0.25);
+}
+
+
+/* Decorative circles */
+
+.home-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.12);
+
+    top: -120px;
+    left: -80px;
+
+}
+
+
+.home-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.10);
+
+    bottom: -120px;
+    right: -70px;
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+}
+
+
+.hero-icon {
+
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 38px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.20);
+
+    backdrop-filter:
+        blur(10px);
+
+}
+
+
+.home-hero h1 {
+
+    color: white;
+
+    font-size: 56px;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.home-hero h1 span {
+
+    color: #facc15;
+
+}
+
+
+.home-hero h2 {
+
+    color: #f8fafc;
+
+    font-size: 30px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.home-hero p {
+
+    color: #e0e7ff;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin:
+        0 auto
+        30px;
+
+}
+
+
+/* Dashboard Button */
+
+.home-dashboard-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding:
+        15px
+        32px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    color: #312e81;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    background:
+        linear-gradient(
+            135deg,
+            #facc15,
+            #f59e0b
+        );
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.20);
+
+    transition:
+        0.3s;
+
+}
+
+
+.home-dashboard-btn:hover {
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+        0 15px 30px
+        rgba(0, 0, 0, 0.28);
+
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features-section {
+
+    max-width: 1500px;
+
+    margin: auto;
+
+}
+
+
+.features-title {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+.features-title span {
+
+    font-size: 35px;
+
+}
+
+
+.features-title h2 {
+
+    font-size: 42px;
+
+    color: #243b64;
+
+    margin:
+        8px
+        0;
+
+}
+
+
+.features-title p {
+
+    color: #64748b;
+
+    font-size: 17px;
+
+}
+
+
+/* =========================================
+   FEATURE GRID
+========================================= */
+
+.features-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px, 1fr)
+        );
+
+    gap: 25px;
+
+}
+
+
+/* =========================================
+   FEATURE CARD
+========================================= */
+
+.feature-card {
+
+    min-height: 260px;
+
+    padding: 35px 25px;
+
+    border-radius: 22px;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    position: relative;
+
+    overflow: hidden;
+
+    color: white;
+
+}
+
+
+.feature-card:hover {
+
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 20px 35px
+        rgba(0, 0, 0, 0.20);
+
+}
+
+
+.feature-icon {
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    font-size: 34px;
+
+    margin-bottom: 18px;
+
+    background:
+        rgba(255, 255, 255, 0.20);
+
+}
+
+
+.feature-card h3 {
+
+    font-size: 25px;
+
+    margin:
+        5px
+        0
+        12px;
+
+    font-weight: 750;
+
+}
+
+
+.feature-card p {
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+
+}
+
+
+.explore-text {
+
+    font-weight: 700;
+
+    font-size: 15px;
+
+    padding:
+        8px
+        16px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.18);
+
+}
+
+
+/* =========================================
+   DIFFERENT COLOR CARDS
+========================================= */
+
+
+/* Departments */
+
+.departments-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #4f46e5
+        );
+
+}
+
+
+/* Doctors */
+
+.doctors-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #0891b2,
+            #06b6d4
+        );
+
+}
+
+
+/* Patients */
+
+.patients-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ec4899,
+            #db2777
+        );
+
+}
+
+
+/* Appointments */
+
+.appointments-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #f97316,
+            #ea580c
+        );
+
+}
+
+
+/* Medical Records */
+
+.records-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #059669,
+            #14b8a6
+        );
+
+}
+
+
+/* Prescriptions */
+
+.prescriptions-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #9333ea
+        );
+
+}
+
+
+/* AI Feature */
+
+.ai-feature {
+
+    background:
+        linear-gradient(
+            135deg,
+            #312e81,
+            #7c3aed,
+            #c026d3
+        );
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .home-page {
+
+        padding: 15px;
+
+    }
+
+
+    .home-hero {
+
+        min-height: 400px;
+
+        padding:
+            40px
+            20px;
+
+    }
+
+
+    .home-hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .home-hero h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    .features-title h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .feature-card {
+
+        min-height: 220px;
+
+    }
+
+}
+
+/* =====================================
+   COMMON ACTION BUTTONS
+===================================== */
+
+.action-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    white-space: nowrap;
+
+}
+
+
+/* =====================================
+   EDIT BUTTON
+===================================== */
+
+.edit-button {
+
+    width: 76px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fbbf24,
+            #ff8a00
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 8px 18px
+        rgba(255, 145, 0, 0.25);
+
+    transition: all 0.3s ease;
+
+}
+
+
+.edit-button:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 12px 22px
+        rgba(255, 145, 0, 0.35);
+
+}
+
+
+/* =====================================
+   DEACTIVATE BUTTON
+===================================== */
+
+.deactivate-button {
+
+    width: 110px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6366f1,
+            #4338ca
+        );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 8px 18px
+        rgba(67, 56, 202, 0.25);
+
+    transition: all 0.3s ease;
+
+}
+
+
+.deactivate-button:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 12px 22px
+        rgba(67, 56, 202, 0.35);
+
+}
+
+
+/* =====================================
+   ACTIVATE BUTTON
+===================================== */
+
+.activate-button {
+
+    width: 95px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #22c55e,
+            #16a34a
+        );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 8px 18px
+        rgba(34, 197, 94, 0.25);
+
+    transition: all 0.3s ease;
+
+}
+
+
+.activate-button:hover {
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =====================================
+   DELETE BUTTON
+===================================== */
+
+.delete-button {
+
+    width: 90px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4b4b,
+            #ff0000
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 8px 18px
+        rgba(255, 0, 0, 0.20);
+
+    transition: all 0.3s ease;
+
+}
+
+
+.delete-button:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 12px 22px
+        rgba(255, 0, 0, 0.30);
+
+}
+/* ACTION BUTTON CONTAINER */
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    white-space: nowrap;
+}
+
+
+/* COMMON BUTTON STYLE */
+
+.action-buttons button {
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    min-width: 96px;
+    height: 48px;
+
+    padding: 0 22px;
+
+    border-radius: 12px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* EDIT BUTTON */
+
+.edit-button {
+    background: linear-gradient(
+        135deg,
+        #ffb000,
+        #ff7a00
+    );
+
+    box-shadow:
+        0 8px 20px
+        rgba(255, 140, 0, 0.25);
+}
+
+
+/* DEACTIVATE BUTTON */
+
+.deactivate-button {
+    background: linear-gradient(
+        135deg,
+        #6f63d8,
+        #5143b8
+    );
+
+    box-shadow:
+        0 8px 20px
+        rgba(90, 70, 200, 0.25);
+}
+
+
+/* DELETE BUTTON */
+
+.delete-button {
+    background: linear-gradient(
+        135deg,
+        #ff4b4b,
+        #e62222
+    );
+
+    box-shadow:
+        0 8px 20px
+        rgba(255, 40, 40, 0.25);
+}
+
+
+/* HOVER */
+
+.edit-button:hover,
+.deactivate-button:hover,
+.delete-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
