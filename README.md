@@ -23,7 +23,7 @@ Backend:
 - Java
 
 Database:
-- (మీరు ఉపయోగించిన database పేరు)
+- MySql
 
 Features:
 - Add
